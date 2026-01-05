@@ -1,75 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-  <!-- Google Search Console Verification -->
-  <meta name="google-site-verification" content="GJeByHOc503m8UIVCaqIzDe6LDQkteWgAYTVhMTjjPc" />
+<!-- Google Search Console Verification -->
+<meta name="google-site-verification" content="GJeByHOc503m8UIVCaqIzDe6LDQkteWgAYTVhMTjjPc" />
 
-  <!-- SEO -->
-  <title>PIN Code Search India | Search by PIN Code or Area</title>
-  <meta name="description" content="Search Indian PIN Codes by area name or PIN number. Find post office, district, state details. పిన్ కోడ్ వివరాలు తెలుసుకోండి.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="English, Telugu">
+<title>PIN Code Search India | Search by PIN or Area</title>
 
-  <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4547861733241253"
-     crossorigin="anonymous"></script>
+<meta name="description" content="Search Indian PIN codes by area name or PIN number. Get post office, district, state details instantly.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f5f7fa;
-    }
-    header {
-      background: #0b3c91;
-      color: #fff;
-      padding: 15px;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      background: #fff;
-    }
-    input {
-      width: 100%;
-      padding: 12px;
-      font-size: 16px;
-      margin: 10px 0;
-    }
-    button {
-      padding: 10px 20px;
-      background: #0b3c91;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
-    .result {
-      margin-top: 20px;
-    }
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-    }
-    footer a {
-      color: #fff;
-      margin: 0 8px;
-      text-decoration: none;
-    }
-  </style>
+<!-- Google AdSense -->
+<script async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4547861733241253"
+  crossorigin="anonymous"></script>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f8;
+}
+
+header {
+  background: #0b3c91;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px;
+  background: #0b3c91;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #092f6f;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+</style>
 </head>
 
 <body>
@@ -77,55 +88,147 @@
 <header>
   <h1>PIN Code Search India</h1>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="disclaimer.html">Disclaimer</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#disclaimer">Disclaimer</a>
   </nav>
 </header>
 
-<div class="container">
-
+<div class="container" id="home">
   <h2>Search by PIN Code or Area</h2>
-  <input type="text" id="search" placeholder="Enter PIN Code or Area name">
-  <button onclick="searchPin()">Search</button>
+  <input type="text" id="query" placeholder="Enter PIN code or Area name">
+  <button onclick="searchPIN()">Search</button>
 
   <div class="result" id="result"></div>
-
-  <hr>
-
+</div>
+<div class="container section" id="what-is-pincode">
   <h2>What is a PIN Code?</h2>
+
   <p>
-    A PIN Code (Postal Index Number) is a 6-digit code used by India Post to identify
-    post offices and locations across India.
+    A PIN Code (Postal Index Number) is a 6-digit numerical code used by
+    India Post to identify specific post offices and regions across India.
+    It helps in fast and accurate delivery of letters, parcels, and courier services.
   </p>
 
+  <p>
+    Each digit in a PIN code has meaning:
+  </p>
+
+  <ul>
+    <li><strong>First digit</strong> – Region</li>
+    <li><strong>Second digit</strong> – Sub-region</li>
+    <li><strong>Third digit</strong> – Sorting district</li>
+    <li><strong>Last three digits</strong> – Specific post office</li>
+  </ul>
+
+  <p>
+    Using our PIN Code Search India tool, you can search by area name or
+    PIN number to get post office, district, and state details instantly.
+  </p>
+</div>
+
+<div class="container section" id="what-is-pincode-telugu">
   <h2>పిన్ కోడ్ అంటే ఏమిటి?</h2>
+
   <p>
-    పిన్ కోడ్ (Postal Index Number) అనేది భారత పోస్టల్ వ్యవస్థలో
-    ప్రాంతాలను గుర్తించడానికి ఉపయోగించే 6 అంకెల సంఖ్య.
+    పిన్ కోడ్ (Postal Index Number) అనేది భారత తపాలా శాఖ (India Post)
+    ఉపయోగించే 6 అంకెల సంఖ్య. ఇది దేశవ్యాప్తంగా పోస్టాఫీస్‌లు మరియు
+    ప్రాంతాలను గుర్తించడానికి ఉపయోగపడుతుంది.
   </p>
 
+  <p>
+    లేఖలు, పార్సెల్స్ మరియు కొరియర్ సేవలు త్వరగా మరియు సరిగ్గా చేరడానికి
+    పిన్ కోడ్ ఎంతో సహాయపడుతుంది.
+  </p>
+
+  <ul>
+    <li><strong>మొదటి అంకె</strong> – ప్రాంతం</li>
+    <li><strong>రెండవ అంకె</strong> – ఉప ప్రాంతం</li>
+    <li><strong>మూడవ అంకె</strong> – సార్టింగ్ జిల్లా</li>
+    <li><strong>చివరి మూడు అంకెలు</strong> – ప్రత్యేక పోస్టాఫీస్</li>
+  </ul>
+
+  <p>
+    మా PIN Code Search India వెబ్‌సైట్ ద్వారా మీరు ప్రాంతం పేరు లేదా
+    పిన్ కోడ్ నమోదు చేసి పోస్టాఫీస్ వివరాలు, జిల్లా మరియు రాష్ట్రం
+    సమాచారం తెలుసుకోవచ్చు.
+  </p>
+</div>
+<div class="container section" id="about">
+  <h2>About</h2>
+  <p>
+    PIN Code Search India helps users find Indian postal PIN codes easily.
+    You can search by area name or 6-digit PIN code and get post office,
+    district, and state details instantly.
+  </p>
+</div>
+
+<div class="container section" id="contact">
+  <h2>Contact</h2>
+  <p>
+    Email: <strong>support@pincodesearch.co.in</strong><br>
+    This website uses publicly available India Post data.
+  </p>
+</div>
+
+<div class="container section" id="disclaimer">
+  <h2>Disclaimer</h2>
+  <p>
+    This website is not affiliated with India Post or any government authority.
+    Information is provided for reference only. Accuracy is not guaranteed.
+  </p>
 </div>
 
 <footer>
-  © 2026 PIN Code Search India |
-  <a href="about.html">About</a> |
-  <a href="contact.html">Contact</a> |
-  <a href="privacy.html">Privacy</a> |
-  <a href="disclaimer.html">Disclaimer</a>
+  © 2026 PIN Code Search India
 </footer>
 
 <script>
-function searchPin() {
-  const q = document.getElementById("search").value.trim();
+function searchPIN() {
+  const q = document.getElementById("query").value.trim();
   const resultDiv = document.getElementById("result");
-  if (!q) {
-    resultDiv.innerHTML = "<p>Please enter a PIN Code or Area name.</p>";
+  resultDiv.innerHTML = "Searching...";
+
+  if (q === "") {
+    resultDiv.innerHTML = "Please enter a PIN code or area name.";
     return;
   }
-  resultDiv.innerHTML = "<p>Searching results for <b>" + q + "</b>...</p>";
+
+  let url = "";
+
+  if (/^\d{6}$/.test(q)) {
+    url = "https://api.postalpincode.in/pincode/" + q;
+  } else {
+    url = "https://api.postalpincode.in/postoffice/" + q;
+  }
+
+  fetch(url)
+    .then(res => res.json())
+    .then(data => {
+      if (data[0].Status !== "Success") {
+        resultDiv.innerHTML = "No results found.";
+        return;
+      }
+
+      let html = "";
+      data[0].PostOffice.forEach(po => {
+        html += `
+          <p>
+            <strong>${po.Name}</strong><br>
+            District: ${po.District}<br>
+            State: ${po.State}<br>
+            PIN Code: ${po.Pincode}
+          </p>
+          <hr>
+        `;
+      });
+
+      resultDiv.innerHTML = html;
+    })
+    .catch(() => {
+      resultDiv.innerHTML = "Error fetching data. Please try again.";
+    });
 }
 </script>
 
