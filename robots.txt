@@ -1,2 +1,3 @@
-omUser-agent: *
+User-agent: *
 Disallow: /pincode/
+Sitemap: https://pincodesearch.co.in/sitemap.xmln
